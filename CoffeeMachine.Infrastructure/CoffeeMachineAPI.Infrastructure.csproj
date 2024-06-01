@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\WeatherService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoffeeMachine.Application\CoffeeMachineAPI.Application.csproj" />
+    <ProjectReference Include="..\CoffeeMachineAPI.Domain\CoffeeMachineAPI.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+</Project>
