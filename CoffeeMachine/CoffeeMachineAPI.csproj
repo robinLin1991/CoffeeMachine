@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CoffeeMachine.Application\CoffeeMachineAPI.Application.csproj" />
+    <ProjectReference Include="..\CoffeeMachine.Infrastructure\CoffeeMachineAPI.Infrastructure.csproj" />
     <ProjectReference Include="..\CoffeeMachineAPI.Domain\CoffeeMachineAPI.Domain.csproj" />
   </ItemGroup>
 

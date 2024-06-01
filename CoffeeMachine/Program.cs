@@ -8,7 +8,7 @@ using Microsoft.OpenApi.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.ResolveDependencies();
+builder.Services.ResolveDependencies(builder);
 
 builder.Services.AddSwaggerGen(c =>
 {

@@ -7,16 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Services\WeatherService.cs" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CoffeeMachine.Application\CoffeeMachineAPI.Application.csproj" />
     <ProjectReference Include="..\CoffeeMachineAPI.Domain\CoffeeMachineAPI.Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>
