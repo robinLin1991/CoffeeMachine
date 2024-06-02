@@ -15,10 +15,5 @@ namespace CoffeeMachineAPI.Domain.Entities
         {
             return date.Month == 4 && date.Day == 1;
         }
-
-        public void ResetBrewCount()
-        {
-            BrewCount = 0;
-        }
     }
 }
