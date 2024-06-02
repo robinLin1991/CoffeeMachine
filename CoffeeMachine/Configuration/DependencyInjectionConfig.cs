@@ -11,7 +11,7 @@ namespace CoffeeMachineAPI.Configuration
     public static class DependencyInjectionConfig
     {
         //Define Dependency Injections and configs
-        public static IServiceCollection ResolveDependencies(this IServiceCollection services)
+        public static IServiceCollection ResolveDependencies(this IServiceCollection services, WebApplicationBuilder builder)
         {
             services.AddSingleton<CoffeeMachine>();
             services.AddScoped<ICoffeeMachineService, CoffeeMachineService>();
