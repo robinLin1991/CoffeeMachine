@@ -14,7 +14,7 @@ namespace CoffeeMachineAPI.Tests
             // Arrange
             var coffeeMachine = new CoffeeMachine();
             var dateTimeProviderMock = new Mock<IDateTimeProvider>();
-            dateTimeProviderMock.Setup(p => p.Now).Returns(DateTime.UtcNow);
+            dateTimeProviderMock.Setup(p => p.Now).Returns(DateTime.UtcNow);  
             var service = new CoffeeMachineService(coffeeMachine, dateTimeProviderMock.Object);
 
             // Act
@@ -51,7 +51,7 @@ namespace CoffeeMachineAPI.Tests
             // Arrange
             var coffeeMachine = new CoffeeMachine();
             var dateTimeProviderMock = new Mock<IDateTimeProvider>();
-            var aprilFirst = new DateTime(DateTime.UtcNow.Year, 4, 1);
+            var aprilFirst = new DateTime(DateTime.UtcNow.Year, 4, 1); //Simulate the 1st of April by injection
             dateTimeProviderMock.Setup(p => p.Now).Returns(aprilFirst);
             var service = new CoffeeMachineService(coffeeMachine, dateTimeProviderMock.Object);
 

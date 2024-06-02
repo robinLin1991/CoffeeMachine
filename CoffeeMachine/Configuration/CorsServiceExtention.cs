@@ -2,6 +2,7 @@
 {
     public static class CorsServiceExtention
     {
+        //Define Cors policy to ensure endpoint access from client site
         public static void CorsDomainPolicy(this WebApplicationBuilder builder)
         {
 

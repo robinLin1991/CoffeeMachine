@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Enums\WeatherAPIConsts.cs" />
+    <Compile Remove="Consts\WeatherAPIConsts.cs" />
   </ItemGroup>
 
 </Project>
